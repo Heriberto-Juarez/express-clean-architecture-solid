@@ -1,0 +1,27 @@
+{
+  "name": "express-clean-architecture-solid",
+  "version": "1.0.0",
+  "description": "Express API with clean architecture + SOLID and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heriberto-Juarez/express-clean-architecture-solid.git"
+  },
+  "keywords": [
+    "solid",
+    "clean",
+    "architecture",
+    "api",
+    "express",
+    "typescript"
+  ],
+  "author": "Heriberto-Juarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heriberto-Juarez/express-clean-architecture-solid/issues"
+  },
+  "homepage": "https://github.com/Heriberto-Juarez/express-clean-architecture-solid#readme"
+}
