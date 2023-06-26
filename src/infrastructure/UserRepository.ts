@@ -1,5 +1,5 @@
-import { User } from "../domain/User";
-import { UserRepositoryInterface } from "../interfaces/UserRepositoryInterface";
+import { User } from "../domain/entities/User";
+import { UserRepositoryInterface } from "../domain/repositories/UserRepositoryInterface";
 
 import sequelize from "sequelize";
 import db from "./database";

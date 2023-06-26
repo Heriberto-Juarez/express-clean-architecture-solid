@@ -3,7 +3,7 @@ import { CreateUserUseCase } from "../../application/CreateUserUseCase";
 import {v4 as uuidv4} from 'uuid';
 import { LoginUseCase } from "../../application/LoginUseCase";
 import {injectable, inject} from 'tsyringe';
-import { ValidationError } from "../../errors/ValidationError";
+import { ValidationError } from "../../infrastructure/errors/ValidationError";
 
 @injectable()
 export class UserController {

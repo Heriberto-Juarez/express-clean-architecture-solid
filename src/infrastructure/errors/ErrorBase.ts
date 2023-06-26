@@ -1,4 +1,4 @@
-import { ErrorInterface } from "../interfaces/ErrorInterface";
+import { ErrorInterface } from "./ErrorInterface";
 
 export class ErrorBase extends Error {
     

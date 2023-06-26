@@ -1,4 +1,4 @@
-import { UserRepositoryInterface } from "../interfaces/UserRepositoryInterface";
+import { UserRepositoryInterface } from "../domain/repositories/UserRepositoryInterface";
 import { PasswordService } from "./PasswordService";
 import {JwtService} from './JwtService'
 import { injectable, inject } from "tsyringe";

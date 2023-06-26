@@ -1,10 +1,10 @@
 import {container} from 'tsyringe';
-import { CreateUserUseCase } from './application/CreateUserUseCase';
-import { UserRepository } from './infrastructure/UserRepository';
-import { BcryptPasswordService } from './application/BcryptPasswordService';
-import { LoginUseCase } from './application/LoginUseCase';
-import { JwtService } from './application/JwtService';
-import { UserController } from './presentation/user/UserController';
+import { CreateUserUseCase } from '../application/CreateUserUseCase';
+import { UserRepository } from './UserRepository';
+import { BcryptPasswordService } from '../application/BcryptPasswordService';
+import { LoginUseCase } from '../application/LoginUseCase';
+import { JwtService } from '../application/JwtService';
+import { UserController } from '../presentation/user/UserController';
 
 
 container.register<UserRepository>('UserRepository', {useClass: UserRepository});
