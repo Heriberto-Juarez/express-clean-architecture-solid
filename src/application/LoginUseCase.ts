@@ -1,12 +1,17 @@
 import { UserRepositoryInterface } from "../interfaces/UserRepositoryInterface";
 import { PasswordService } from "./PasswordService";
 import {JwtService} from './JwtService'
+import { injectable, inject } from "tsyringe";
 
+@injectable()
 export class LoginUseCase {
     
     constructor(
+        @inject('UserRepository')
         private readonly userRepository : UserRepositoryInterface,
+        @inject('PasswordService')
         private readonly passwordService : PasswordService,
+        @inject('TokenService')
         private readonly jwtService : JwtService
     ){
     }

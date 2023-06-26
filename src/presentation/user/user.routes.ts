@@ -1,9 +1,12 @@
 import {Router} from 'express';
-import { login, registerUser } from './UserController';
+import { container } from '../../tsyringe.config';
+import { UserController } from './UserController';
+
+const userController = container.resolve(UserController)
 
 const router = Router();
 
-router.post(`/user`, registerUser);
-router.post(`/user/login`, login)
+router.post(`/user`, userController.registerUser);
+router.post(`/user/login`, userController.login);
 
 export default router;

@@ -1,10 +1,14 @@
 import { User } from "../domain/User";
 import { UserRepositoryInterface } from "../interfaces/UserRepositoryInterface";
 import { PasswordService } from "./PasswordService";
+import { injectable, inject } from "tsyringe";
 
+@injectable()
 export class CreateUserUseCase {
   constructor(
+    @inject('PasswordService')
     private readonly passwordService: PasswordService,
+    @inject('UserRepository')
     private readonly userRepository: UserRepositoryInterface
   ) {}
 
@@ -14,8 +18,6 @@ export class CreateUserUseCase {
       ...user,
       password: hashedPassword,
     };
-
     await this.userRepository.save(userWithHashedPassword);
-    console.log('Registering user:', userWithHashedPassword);
   }
 }
